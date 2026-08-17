@@ -5,12 +5,15 @@
 
 body{
     background-color: rgb(117, 96, 136);
+    margin: 0;
+    padding: 20px;
+    font-family: Arial, sans-serif;
 }
 
 
 main{
     background-color: white;
-    width: 500px;
+    max-width: 1000px;
     margin: auto;
     padding: 10px;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.573);
@@ -18,4 +21,35 @@ main{
 
 img.lado {
     float: right;
+    width: 300px;
+    max-width: 100%;
+    height: auto;
+}
+
+.texto {
+    flex: 1;
+}
+
+@media (max-width: 600px) {
+    body {
+        pedding: 15px;
+    }
+    h1 {
+        font-size: 28px;
+    }
+    img.lado {
+        flex-direction: column;
+        text-align: center;
+    }
+    .lado {
+        width: 90%;
+    }
+    .texto {
+        width: 100%;
+    }
+    iframe {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16 / 19;
+    }
 }
