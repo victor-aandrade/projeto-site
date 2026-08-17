@@ -7,7 +7,6 @@ body{
     background-color: rgb(117, 96, 136);
     margin: 0;
     padding: 20px;
-    font-family: Arial, sans-serif;
 }
 
 
@@ -22,34 +21,29 @@ main{
 img.lado {
     float: right;
     width: 300px;
-    max-width: 100%;
+    max-width: 40%;
     height: auto;
+    margin-left: 20px;
+    margin-bottom: 10px;
 }
 
-.texto {
-    flex: 1;
+article {
+    overflow: auto;
 }
 
 @media (max-width: 600px) {
     body {
-        pedding: 15px;
+        padding: 15px;
     }
     h1 {
         font-size: 28px;
     }
+
     img.lado {
-        flex-direction: column;
-        text-align: center;
-    }
-    .lado {
+        float: none;
+        display: block;
         width: 90%;
-    }
-    .texto {
-        width: 100%;
-    }
-    iframe {
-        width: 100%;
-        height: auto;
-        aspect-ratio: 16 / 19;
+        max-width: 300px;
+        margin: 10px auto;
     }
 }
